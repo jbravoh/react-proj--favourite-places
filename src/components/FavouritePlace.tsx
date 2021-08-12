@@ -1,16 +1,23 @@
 interface FavouritePlaceProps {
-  image: string;
-  place: string;
-  location: string;
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  name: string;
+  country: string;
   description: string;
+  mapURL: string;
 }
 
 function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
   return (
     <section>
-      <h2>{props.place}</h2>
-      <h3>{props.location}</h3>
-      <p>{props.description}</p>
+      <img src={props.imgSrc} alt={props.imgAlt} />
+      <h2>{props.title}</h2>
+      <h3>
+        {props.name}
+        {props.country}
+      </h3>
+      <p>Here's the location on <a href="{props.description}">Google Maps</a>.</p>
     </section>
   );
 }
