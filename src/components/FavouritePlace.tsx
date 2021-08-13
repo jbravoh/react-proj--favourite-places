@@ -1,3 +1,5 @@
+import "../css/script.css";
+
 interface FavouritePlaceProps {
   imgSrc: string;
   imgAlt: string;
@@ -10,14 +12,16 @@ interface FavouritePlaceProps {
 
 function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
   return (
-    <section>
-      <img src={props.imgSrc} alt={props.imgAlt} />
-      <h2>{props.title}</h2>
-      <h3>
-        {props.name}
-        {props.country}
+    <section className="place-container">
+      <img className="image" src={props.imgSrc} alt={props.imgAlt} />
+      <h2 className="place-title">{props.title}</h2>
+      <h3 className="place-location">
+        {props.name}, {props.country}
       </h3>
-      <p>Here's the location on <a href="{props.description}">Google Maps</a>.</p>
+      <p className="place-description">{props.description}</p>
+      <p>
+        Here's {props.name} on <a href={props.mapURL}>Google Maps</a>.
+      </p>
     </section>
   );
 }
