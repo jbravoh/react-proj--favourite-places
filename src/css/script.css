@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+body {
+  margin: 0;
+  background: #a2d5f2;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ===> PageHeader <=== */
+
+.page-title {
+  font-size: 50px;
+  font-family: "Gloria Hallelujah";
+  font-weight: bold;
+  text-align: center;
+  color: #fafafa;
+  margin: 0 0 15px;
+  background: #07689f;
+}
+
+/* ===> MainContent <=== */
+
+.fav-places-container {
+  display: grid;
+  grid-template-columns: repeat(1, 60%);
+  justify-content: center;
+  align-items: stretch;
+  grid-gap: 20px;
+  grid-column-end: auto;
+}
+/* ===> FavouritePlace <=== */
+
+.place-container {
+  text-align: center;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 5px;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.place-title {
+  font-family: "Gloria Hallelujah";
+  font-size: 22px;
+  color: rgb(253, 95, 67);
+}
+
+.place-location {
+  font-size: 16px;
+}
+
+.place-description {
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+.image {
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* ===> PageFooter <=== */
+
+footer {
+  background-color: #07689f;
+  text-align: center;
+  margin-top: 15px;
+  padding: 20px;
+  grid-column-end: auto;
+  color: #fafafa;
+  font-size: 12px;
+}
+
+.footer-title {
+  font-weight: bold;
+}
+.credit {
+  margin: 0;
+}
